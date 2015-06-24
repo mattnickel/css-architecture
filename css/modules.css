@@ -1,67 +1,117 @@
 /*----------------Header--------------------*/
-.header_nav li {
+.main_header a {
   text-transform: uppercase;
-  list-style: none;
-  display:inline-block;
-  padding: 0px;
-  border: 2px;
-  font-size: 1em;
+  text-decoration: none;
+  color: black;
 }
-.top {
+.bottom_border {
   border-bottom: 1px solid #a6a6a6;
 }
-/*---------------------Main Section------------------*/
-.main_img {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  width: 100%;
-}
-/*-------------------Email Section-------------------*/
-.subscribe{
-  background-color: #efeded;
-}
-.subscribe_message {
-  margin-top: 5%;
-  color: gray;
-  text-align: center;
-}
-.subscribe_form {
-  margin-left: 15%
-}
-#subscribe {
-  width: 260px;
-  margin: 3%;
-  margin-bottom: 10%;
+a {
+  color: #038491;
 }
 
+/*----------------Mobile Menu--------------------*/
+.mobile_navigation {
+  list-style: none;
+  background: #ffffff;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+.nav-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 0.188em;
+}
+.site-wrap {
+  min-height: 1000px;
+  min-width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+}
+label[for="nav-trigger"] {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  width: 2.188em;
+  height: 2.188em;
+  cursor: pointer;
+  background-image: url("../photos/hamburger-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.nav-trigger:checked + label {
+    left: 245px;
+}
+.nav-trigger:checked ~ .site-wrap {
+    left: 200px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+.nav-trigger + label{
+  transition: left 0.2s;
+}
+.site-wrap {
+   transition: left 0.2s;
+}
+/*-------------------Subscribe Section-------------------*/
+.subscribe_form {
+  background-color: #efeded;
+  text-align: center;
+  padding: 3%;
+  padding-top: 0px;
+}
+.subscribe_form_message {
+  color: gray;
+  text-align: center;
+  margin:5%;
+}
 /*-------------------Social Section-------------------*/
 .social_section {
   background-color: #f5fcfd;
-  padding-top: 10%;
-  padding-bottom: 10%
-}
-.social_section li {
-  list-style: none;
-  padding: 5%;
-  font-size: 5em;
-  color: #a6a6a6;
+  padding: 7%;
   text-align: center;
+}
+.social_section a {
+  list-style: none;
+  color: #a6a6a6;
+  text-decoration: none;
+  text-align: center;
+  margin: 5%;
 }
 .social_section li:first-child {
   padding-left: 23%;
 }
 /*-------------------News Section-------------------*/
 .news {
-  padding-top: 5%;
   background-color: #efeded;
 }
+.news_author_div {
+  text-align: center;
+}
 .news_author_pic {
-  border-radius: 180px;
-  padding-top: 2%;
+  border-radius: 200px;
+  text-align: center;
+  width:50%;
 }
 .news_author_name {
   text-align: center;
   color: 038491;
+  padding-left: 5%;
 }
 .news_content_link {
   font-style: none;
@@ -72,7 +122,7 @@
   margin-top: 5%;
   border-top: 1px solid #a6a6a6;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.750em;
   color:#a6a6a6;
   padding:2%;
 }
