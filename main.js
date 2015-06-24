@@ -1,7 +1,7 @@
 function verifyEmail() {
-  var status= document.getElementById('emailStatus');
+  var status = document.getElementById('emailStatus');
 
-  var emailPattern=/^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+  var emailPattern = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
   if (emailPattern.test(subscribeField.value)) {
     status.classList.remove("notApproved");
     status.classList.add("approved");
