@@ -1,0 +1,21 @@
+.newBlog{
+  background-color: #efeded;
+}
+h1 {
+  text-align: center;
+}
+#POST-blog {
+  width: 99%;
+  height: 200px;
+}
+#POST-title {
+  width: 89%;
+  margin-top: 5%;
+}
+.postEntry {
+  background-color: #f5fcfd;
+}
+.style {
+  border: 2px solid white;
+  padding: 2%;
+}
