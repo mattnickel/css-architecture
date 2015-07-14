@@ -1,58 +1,101 @@
 <!doctype html>
 <html class="no-js" lang="">
   <head>
-    <title></title>
+    <title>Barron Home</title>
       <link rel="stylesheet" href="css/base.css">
       <link rel="stylesheet" href="css/layout.css">
       <link rel="stylesheet" href="css/modules.css">
       <link rel="stylesheet" href="css/states.css">
       <link rel="stylesheet" href="css/themes.css">
-      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+      <link rel="stylesheet" href="css/video.css">
   </head>
   <body class="container">
-    <header class="twelve columns top">
-      <ul class="header_nav four columns">
-        <li>About</li>
-        <li>Categories</li>
-      </ul>
-      <div class="four columns">
-      <img class="logo" src="https://pbs.twimg.com/profile_images/1043251063/twitter-logo.png">
-      </div>
-      <ul class="header_nav four columns">
-        <li>Latest</li>
-        <li>Buy it now</li>
-      </ul>
-    </header>
-    <main class="twelve columns">
-      <section class="ten columns offset-by-one column">
-      <img class="main_img" src="http://static1.squarespace.com/static/543094d8e4b0c2e1c2eb5d4f/5439d301e4b0dca077dd65c5/54b8a19ae4b0a3e130db1da8/1426437417498/13134+P+Page8+I21+by+roost.jpg?format=1000w" alt="">
-      </section>
-      <section class="twelve columns subscribe">
-        <p class="subscribe_message">Subcribe here for offers and updates!</p>
-        <form class= "six columns offset-by-three subscribe_form">
-        <input id="subscribe" type="email" placeholder="email">
-        <button>Submit</button>
-        </form>
-      </section>
-      <section class="twelve columns">
-        <ul class="social_section">
-          <li class="icon-facebook3"></li>
-          <li class="icon-twitter3"></li>
-          <li class="icon-pinterest"></li>
+    <section>
+      <nav>
+        <ul class="mobile_navigation">
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Categories</a></li>
+            <li class="nav-item"><a href="#">Latest</a></li>
+            <li class="nav-item"><a href="#">Buy it</a></li>
         </ul>
-      </section>
-      <article class="twelve columns news">
-        <div class="three columns offset-by-one column news_author_div">
-          <img class="news_author_pic" src="Head.png" alt="">
-          <h3 class="news_author_name">Chris Allen<h3>
-        </div>
-        <p class="six columns news_content">Congratulations Chocolopolis Top Chocolatier by The Culture Trip Chocolopolis was named one of the best Chocolatiers in the country by The Culture Trip -the experts at Chocolopolis are curators.
-          <a class="news_content_link" href="">Read More</a>
-        </p>
-      </article>
-    </main>
+      </nav>
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger"></label>
+    </section>
+    <div class="site-wrap" twelve columns>
+      <header class="main_header">
+        <a href="">
+          <img id="box"class="logo" src="https://pbs.twimg.com/profile_images/1043251063/twitter-logo.png">
+        </a>
+        <nav class="twelve columns nav_header bottom_border flex-container">
+          <a class="navlink" id=href="">About</a>
+          <a class="navlink leftside" href="">Categories</a>
+          <a class="navlink" href="blog.html">Latest</a>
+          <a class="navlink" href="">Buy it now</a>
+        </nav>
+      </header>
+      <main class="twelve columns">
+        <section class="twelve columns crossfade_image">
+          <img class="main_img bottom"src="photos/BarronPic.jpg">
+          <img class="main_img top"src="photos/BarronPic2.jpg">
+        </section>
+        <section id="formsection" class="twelve columns subscribe_form  site_form section_formatting">
+          <p class="subscribe_form_message">Subcribe here for offers and updates!</p>
+          <form class= "twelve columns subscribe_form">
+          <input id="subscribeField"class="site_form_input" type="email" placeholder="email">
+          <button id="submit">Submit</button>
+          <div class="status" id="emailStatus"></div>
+          <p id="message"><p>
+          </form>
+        </section>
+        <section class="twelve columns social_section section_formatting">
+          <a href=""class="icon-facebook3"></a>
+          <a href=""class="icon-twitter3"></a>
+          <a href=""class="icon-pinterest"></a>
+        </section>
+        <section class="twelve columns news section_formatting">
+          <div class="four columns offset-by-one column news_author_div">
+            <img class="news_author_pic" src="photos/Head.png" alt="">
+            <h3 class="news_author_name">Chris Allen</h3>
+          </div>
+          <p class="six columns news_content">Congratulations Chocolopolis Top Chocolatier by The Culture Trip Chocolopolis was named one of the best Chocolatiers in the country by The Culture Trip -the experts at Chocolopolis are curators.
+            <a class="news_content_link" href="">Read More</a>
+          </p>
+        </section>
+        <section class="twelve columns social_section section_formatting">
+          <div id='media-player'>
+            <video id="myVideo" controls preload="auto" src="video/Demo.mp4" width="540" height="380" poster="http://i.imgur.com/e9HyUp2.png">
+            </video>
+            <div class="control">
+              <div class="topControl">
+                <div class="progress">
+                  <span class="timeBar"></span>
+                </div>
+                <div class="time">
+                  <span class="current"></span>
+                  <span class="duration"></span>
+                </div>
+              </div>
+              <div class="btmControl">
+                <div class="btnPlay btn" title="Play/Pause video"></div>
+                <div class="btnStop btn" title="Stop video"></div>
+                <div class="btnFS btn" title="Switch to full screen"></div>
+                <div class="volume" title="Set volume">
+                  <span class="volumeBar"></span>
+                </div>
+                <div class="sound sound2 btn" title="Mute/Unmute sound"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="jS/main.js"></script>
+        <script src="jS/video.js"></script>
+      </main>
+    </div>
     <footer class="mainfooter twelve columns">
       <p>&copy Copyright The Barron Collection 2015</p>
     </footer>
+</div>
   </body>
 </html>

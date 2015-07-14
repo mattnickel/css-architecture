@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="eng">
+  <head>
+    <title>Barron API</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/states.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/blog.css">
+  </head>
+  <body class="container">
+    <section>
+      <nav>
+        <ul class="mobile_navigation">
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Categories</a></li>
+            <li class="nav-item"><a href="#">Latest</a></li>
+            <li class="nav-item"><a href="#">Buy it</a></li>
+        </ul>
+      </nav>
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger"></label>
+    <section>
+    <div class="site-wrap" twelve columns>
+      <header class="main_header">
+        <a href=""><img id="box"class="logo" src="https://pbs.twimg.com/profile_images/1043251063/twitter-logo.png"></a>
+        <nav class="twelve columns nav_header bottom_border flex-container">
+          <a class="navlink" id=href="">About</a>
+          <a class="navlink leftside" href="">Categories</a>
+          <a class="navlink" href="">Latest</a>
+          <a class="navlink" href="">Buy it now</a>
+        </nav>
+      </header>
+      <section class= "postEntry twelve columns">
+        <section class="ten columns offset-by-one column">
+          <label for="POST-title">Title:</label>
+          <input id="POST-title" type="text" name="title">
+          <label for="POST-blog">Blog Content:</label>
+          <textarea id="POST-blog" type="textarea" name="blog"></textarea>
+          <input id="btn" type="submit" value="Post">
+        </section>
+      </section>
+      <main>
+        <header class= "header">
+          <h1>Recent Posts</h1>
+        </header>
+        <section id="newBlog" class="newBlog">
+        </section>
+      </main>
+      <footer class="mainfooter twelve columns">
+        <p>&copy Copyright The Barron Collection 2015</p>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="jS/api.js"></script>
+    </div>
+  </body>
+</html>

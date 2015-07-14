@@ -69,31 +69,20 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .main_img {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  width: 100%;
+  width: 100%
 }
 .logo {
-  width: 70%;
-  margin-left: 18%;
-}
-.header_nav li {
-  margin: 5%;
-  margin-top: 30%;
-}
-.news_content {
-  margin-left: 8%;
-  margin-top: 5%;
+  max-width: 20%;
+  min-width: 180px;
 }
 .news_content_link {
-  margin-top: 3%;
+  margin: 3%;
 }
 .news_author_name {
   margin: 1%;
 }
-.news_author_pic {
-  margin-left: 10%;
+.site_form_input {
+  width: 260px;
+  margin: 0 auto;
 }
-.social_section li {
-  display:inline;
-}
+

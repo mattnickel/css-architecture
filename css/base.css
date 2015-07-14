@@ -217,18 +217,16 @@ input[type="email"]:focus {
 /* Base Styles
   =========================================================================*/
 p,ul,ol,h1,h2,h3,a {
-    font-family: 'noto_sansregular', sans-serif;
+  font-family: 'noto_sansregular', sans-serif;
   }
-li {
-    font-size: 14px;
-}
+
 button {
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 input {
   margin-bottom: 1.5rem;
 }
-p,ol,form {
-  margin-bottom: 2.5rem;
+section {
+  margin-top: 2%;
 }
-
