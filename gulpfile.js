@@ -1,16 +1,15 @@
-'use strict';
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 
+gulp.task('sass', function() {
+  gulp.src('./public/sass/**/*.sass')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest('./public/css/'));
+});
+
+gulp.task('sass:watch', function() {
+  gulp.watch('./public/sass/**/*.sass', ['sass']);
+});
+
 gulp.task('default', ['sass', 'sass:watch']);
-
-gulp.task('sass', function () {
-  gulp.src('./application.sass')
-    .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
-});
-
-gulp.task('sass:watch', function () {
-  gulp.watch('./application.sass', ['sass']);
-});
