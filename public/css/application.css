@@ -198,6 +198,12 @@ input[type="email"]:focus {
 .icon-pinterest:before {
   content: "\ead0"; }
 
+main:nth-child(odd) {
+  background-color: #f3f3f3; }
+
+main:nth-child(2n+1) {
+  background-color: #f0fdff; }
+
 p, ul, ol, h1, h2, h3, a {
   font-family: 'noto_sansregular', sans-serif; }
 
@@ -210,6 +216,14 @@ input {
 
 section {
   margin-top: 2%; }
+
+header a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black; }
+
+.bottom_border {
+  border-bottom: 1px solid #a6a6a6; }
 
 .main_img {
   width: 100%; }
@@ -224,8 +238,13 @@ section {
 .news_author_name {
   margin: 1%; }
 
-.completed {
-  background-color: #d4d4d3; }
+footer {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 0.750em;
+  padding: 2%;
+  border-top: 1px solid #a6a6a6;
+  color: #a6a6a6; }
 
 .container {
   position: relative;
@@ -312,33 +331,21 @@ section {
   .offset-by-eleven.columns {
     margin-left: 95.3333333333%; } }
 
-/*----------------Header--------------------*/
-.main_header a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black; }
-
-.bottom_border {
-  border-bottom: 1px solid #a6a6a6; }
-
-a {
-  color: #038491; }
-
 /*-------------------Subscribe Section-------------------*/
 .subscribe_form {
-  background-color: #efeded;
+  background-color: #f3f3f3;
   text-align: center;
   padding: 3%;
   padding-top: 0px; }
 
 .subscribe_form_message {
-  color: gray;
+  color: #a6a6a6;
   text-align: center;
   margin: 5%; }
 
 /*-------------------Social Section-------------------*/
 .social_section {
-  background-color: #f5fcfd;
+  background-color: #f0fdff;
   padding: 7%;
   text-align: center; }
 
@@ -360,7 +367,7 @@ a {
 
 /*-------------------News Section-------------------*/
 .news {
-  background-color: #efeded; }
+  background-color: #f3f3f3; }
 
 .news_author_div {
   text-align: center; }
@@ -575,36 +582,15 @@ video {
 .control div.lighton {
   background: url(../resources/photos/control.png) no-repeat -44px -30px !important; }
 
-/* http://www.inwebson.com/html5/custom-html5-video-controls-with-jquery/ */
-video {
-  width: 100%; }
-
-.videoContainer {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background: #000;
-  color: #ccc; }
-
-#init {
-  background: url(../photos/bigplay.png) no-repeat 50% 50% !important;
-  cursor: pointer; }
-
-/*-------------------Footer-------------------*/
-.mainfooter {
-  margin-top: 5%;
-  border-top: 1px solid #a6a6a6;
-  text-align: center;
-  font-size: 0.750em;
-  color: #a6a6a6;
-  padding: 2%; }
-
 .social_section a:hover {
-  color: #038491; }
+  color: #038491;
+  text-decoration: bold; }
 
 .main_header a:hover {
-  color: #038491; }
+  color: #038491;
+  text-decoration: bold; }
 
+/*----------------Modules--------------------*/
 /*----------------Mobile Menu--------------------*/
 .mobile_navigation {
   list-style: none;
@@ -654,27 +640,16 @@ label[for="mobile_nav_trigger"] {
   background-repeat: no-repeat;
   background-size: contain; }
 
-.hero_image {
-  position: relative; }
-
-.bottom {
+/*----------------Hero Hover Transition--------------------*/
+.hero2 {
   position: absolute;
   left: 0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out; }
-
-.bottom:hover {
-  opacity: 0; }
-
-.status {
-  float: right;
-  padding-top: 2%;
-  padding-right: 5%;
-  margin-top: 0.375rem;
-  width: 6rem;
-  height: 6rem; }
+  .hero2:hover {
+    opacity: 0; }
 
 @media (min-width: 320px) {
   .flex-container {
@@ -692,8 +667,6 @@ label[for="mobile_nav_trigger"] {
     padding: 3%;
     text-align: center;
     font-size: 0.688em; }
-  header a:hover {
-    font-size: 0.945em; }
   .main_header {
     text-align: center; }
   height: 60%;
@@ -745,14 +718,10 @@ label[for="mobile_nav_trigger"] {
   .nav_header {
     margin-top: -15%;
     padding-bottom: 8%; }
-  header a:hover {
-    font-size: 1.063em; }
   .container {
     max-width: 1600px; }
   .navlink {
     font-size: 0.938em; }
-  header a:hover {
-    font-size: 1.188em; }
   label[for="mobile_nav_trigger"] {
     display: none; }
   .mobile_navigation {

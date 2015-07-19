@@ -1,0 +1,6 @@
+main:nth-child(odd) {
+  background-color:$section_background_1
+}
+main:nth-child(2n+1) {
+  background-color:$section_background_2
+}

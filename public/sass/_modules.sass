@@ -1,9 +1,13 @@
-/*----------------Mobile Menu--------------------*/
-@import mobile_menu/module
+/*----------------Modules--------------------*/
 
+@import modules/mobile_menu_module
+@import modules/hero_hover_module
+
+/*----------------Mobile Menu--------------------*/
 $mobile_nav_background_color: #fff
 $mobile_nav_padding_top: 0.188em
-$mobile_menu_icon: url("../resources/photos/hamburger-icon.svg");
+$mobile_menu_icon: url("../resources/photos/hamburger-icon.svg")
+
 .mobile_navigation
   $width: 50%
   $height: 50%
@@ -22,5 +26,6 @@ $mobile_menu_icon: url("../resources/photos/hamburger-icon.svg");
 label[for="mobile_nav_trigger"]
   @include mobile_nav_trigger_label
 
-
-
+/*----------------Hero Hover Transition--------------------*/
+.hero2
+  @include hero_image_2
