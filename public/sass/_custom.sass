@@ -1,6 +1,8 @@
+@import ui_patterns/header_footer
+@import ui_patterns/sections
+
 p,ul,ol,h1,h2,h3,a
   font-family: 'noto_sansregular', sans-serif
-
 
 button
   margin-bottom: 1rem
@@ -12,6 +14,11 @@ input
 section
   margin-top: 2%
 
+header a
+  @include typical_menu_styles
+
+.bottom_border
+  border-bottom: 1px solid $accent_color_1
 
 .main_img
   width: 100%
@@ -26,6 +33,8 @@ section
 .news_author_name
   margin: 1%
 
+footer
+  @include typical_footer_styles
+  border-top: 1px solid $accent_color_1
+  color:$accent_color_1
 
-.completed
-  background-color: #d4d4d3
