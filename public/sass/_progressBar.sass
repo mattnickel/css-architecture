@@ -1,0 +1,44 @@
+/* Progress bar */
+.progress
+  width:85%
+  height:10px
+  position:relative
+  float:left
+  cursor:pointer
+  background: #444 /* fallback */
+  background:-moz-linear-gradient(top,#666,#333)
+  background:-webkit-linear-gradient(top,#666,#333)
+  background:-o-linear-gradient(top,#666,#333)
+  box-shadow:0 2px 3px #333 inset
+  -moz-box-shadow:0 2px 3px #333 inset
+  -webkit-box-shadow:0 2px 3px #333 inset
+  border-radius:10px
+  -moz-border-radius:10px
+  -webkit-border-radius:10px
+
+.progress span
+  height:100%
+  position:absolute
+  top:0
+  left:0
+  display:block
+  border-radius:10px
+  -moz-border-radius:10px
+  -webkit-border-radius:10px
+
+.bufferBar
+  z-index:5
+  width:0
+  background: #777
+  background:-moz-linear-gradient(top,#999,#666)
+  background:-webkit-linear-gradient(top,#999,#666)
+  background:-o-linear-gradient(top,#999,#666)
+  box-shadow:2px 0 5px #333
+  -moz-box-shadow:2px 0 5px #333
+  -webkit-box-shadow:2px 0 5px #333
+
+.progressBar
+    position: relative
+    width: 100%
+    height: 10px
+    backgroud-color: #000
