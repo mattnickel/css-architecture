@@ -1,11 +1,27 @@
+@mixin flexSpaceBetween
+  display:flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-between
+  align-content: flex-end
+  align-items: flex-end
+@mixin flexCenter
+  display:flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: center
+  align-items: center
+
+@mixin animation($animate)
+    -webkit-transition:($animate)
+    -moz-transition:($animate)
+    -o-transition:($animate)
+    transition:($animate)
+
 @media (min-width: 320px)
+
   .flex-container
-    display:flex
-    flex-direction: row
-    flex-wrap: nowrap
-    justify-content: space-between
-    align-content: flex-end
-    align-items: flex-end
+    @include flexSpaceBetween
 
   .logo
     max-width: 20%
@@ -21,7 +37,7 @@
     text-align: center
 
   .section_formatting
-  height: 60%
+    height: 60%
 
   .social_section a
     font-size: 4em
@@ -34,10 +50,9 @@
     margin-top: 5%
 
 @media (min-width: 550px)
+
   .news_content
-    margin: 5%
-    padding-right: 3%
-    padding-left: 3%
+    padding: 0 3%
     width: 100%
     font-size: 0.875em
 
@@ -47,17 +62,16 @@
   .social_section a
      font-size: 5em
 
-  label[for="mobile_nav_trigger"]
-    display: none
+  label[for="nav-trigger"]
+    display: $displayProp
 
   .mobile_navigation
-    display: none
+    display: $displayProp
 
 @media (min-width: 750px)
   .navlink
     float:right
     padding:3%
-    text-align: center
     font-size: 0.875em
 
   .news_content
@@ -65,11 +79,7 @@
     width:80%
 
   .flex-container
-    display:flex
-    flex-direction: row
-    flex-wrap: nowrap
-    justify-content: center
-    align-items: center
+    @include flexCenter
 
   .social_section a
     font-size: 7em
@@ -84,21 +94,21 @@
     margin-top: -15%
     padding-bottom: 8%
 
-
-  .container
-    max-width: 1600px
-
   .navlink
     font-size: 0.938em
 
-
-  label[for="mobile_nav_trigger"]
-    display: none
-
-  .mobile_navigation
-    display: none
-
 @media (min-width: 0px) and (max-width: 550px)
   .navlink
-    display: none
+    display: $displayProp
+
+  .crossfade_image
+    position:relative
+
+  .bottom
+    position:absolute
+    left:0
+    @include animation($typeofAnimation)
+  .bottom:hover
+    opacity:0
+
 

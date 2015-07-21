@@ -1,6 +1,7 @@
-main:nth-child(odd) {
+main section:nth-child(even) {
   background-color:$section_background_1
 }
-main:nth-child(2n+1) {
+main section:nth-child(2n+3) {
   background-color:$section_background_2
 }
+

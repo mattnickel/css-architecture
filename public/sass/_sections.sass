@@ -1,0 +1,111 @@
+/*----------------Sections--------------------*/
+
+@import modules/mobile_menu_module
+@import modules/hero_hover_module
+
+
+/*----------------Mobile Menu--------------------*/
+$mobile_nav_background_color: #fff
+$mobile_nav_padding_top: 0.188em
+$mobile_menu_icon: url("../resources/photos/hamburger-icon.svg")
+
+.mobile_navigation
+  $width: 50%
+  $height: 50%
+  @include mobile_nav_module ($mobile_nav_background_color, $width, $height)
+
+
+.mobile_nav_item a
+  @include mobile_nav_anchors ($mobile_nav_padding_top)
+
+.mobile_site_wrap
+  @include mobile_site_wrap_module ($mobile_nav_background_color)
+
+.mobile_nav_trigger
+  @include mobile_nav_trigger_module
+
+label[for="mobile_nav_trigger"]
+  @include mobile_nav_trigger_label
+
+/*----------------Hero Section--------------------*/
+.hero2
+  @include hero_image_2
+
+/*-------------------Subscribe Section-------------------*/
+.subscribe_form
+  text-align: center
+  padding: 3%
+  padding-top: 0px
+
+.subscribe_form_message
+  color: gray
+  text-align: center
+  margin:5%
+
+.status
+  float:right
+  // padding-top: 2%
+  padding-right: 0.5em
+  margin-top: 0.395rem
+  width: 3em
+  height: 3em
+
+.approved
+    background: $approveImg
+.notApproved
+    background:$notApprovedImg
+
+/*----------------Social Section--------------------*/
+.social_section
+  padding: 7%
+  text-align: center
+
+.social_section a
+  list-style: none
+  color: $accent-color_1
+  text-decoration: none
+  text-align: center
+  margin: 5%
+
+.social_section li:first-child
+  padding-left: 23%
+
+
+/*----------------News Section--------------------*/
+.news_author_div
+  text-align: center
+
+.news_author_pic
+  border-radius: 10em
+  text-align: center
+  width:50%
+
+.news_author_name
+  text-align: center
+  color: 038491
+  padding-left: 5%
+
+.news_content_link
+  font-style: none
+  color: 038491
+/*----------------Blog Section--------------------*/
+.newBlog
+  background-color: $section_background_1
+
+h1
+  text-align: center
+
+#POST-blog
+  width: 99%
+  height: 200px
+
+#POST-title
+  width: 89%
+  margin-top: 5%
+
+.postEntry
+  background-color: $section_background_2
+
+.style
+  border: 2px solid white
+  padding: 2%
