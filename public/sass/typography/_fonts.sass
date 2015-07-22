@@ -1,3 +1,7 @@
+$fontType:normal
+@mixin fontWeightStyle ($type)
+  font-weight: ($type)
+  font-style: ($type)
 @font-face
     font-family: 'noto_sansregular'
     src: url('fonts/notosans_regular_macroman/NotoSans-Regular-webfont.eot')
@@ -5,8 +9,7 @@
     src: url('fonts/notosans_regular_macroman/NotoSans-Regular-webfont.woff') format('woff')
     src: url('fonts/notosans_regular_macroman/NotoSans-Regular-webfont.ttf') format('truetype')
     src: url('fonts/notosans_regular_macroman/NotoSans-Regular-webfont.svg#noto_sansregular') format('svg')
-    font-weight: normal
-    font-style: normal
+    @include fontWeightStyle($fontType)
 
 @font-face
     font-family: 'noto_sansitalic'
@@ -15,8 +18,7 @@
     src: url('fonts/notosans_italic_macroman/NotoSans-Italic-webfont.woff') format('woff')
     src: url('fonts/notosans_italic_macroman/NotoSans-Italic-webfont.ttf') format('truetype')
     src: url('fonts/notosans_italic_macroman/NotoSans-Italic-webfont.svg#noto_sansitalic') format('svg')
-    font-weight: normal
-    font-style: normal
+    @include fontWeightStyle($fontType)
 
 @font-face
     font-family: 'noto_sansbold'
@@ -25,8 +27,7 @@
     src: url('fonts/notosans_bold_macroman/NotoSans-Bold-webfont.woff') format('woff')
     src: url('fonts/notosans_bold_macroman/NotoSans-Bold-webfont.ttf') format('truetype')
     src: url('fonts/notosans_bold_macroman/NotoSans-Bold-webfont.svg#noto_sansbold') format('svg')
-    font-weight: normal
-    font-style: normal
+    @include fontWeightStyle($fontType)
 
 @font-face
     font-family: 'noto_sansbold_italic'
@@ -35,5 +36,4 @@
     src: url('fonts/notosans_bolditalic_macroman/NotoSans-BoldItalic-webfont.woff') format('woff')
     src: url('fonts/notosans_bolditalic_macroman/NotoSans-BoldItalic-webfont.ttf') format('truetype')
     src: url('fonts/notosans_bolditalic_macroman/NotoSans-BoldItalic-webfont.svg#noto_sansbold_italic') format('svg')
-    font-weight: normal
-    font-style: normal
+    @include fontWeightStyle($fontType)
